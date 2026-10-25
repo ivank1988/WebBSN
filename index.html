@@ -3,26 +3,55 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>BSN Solution</title>
-  <meta name="description" content="BSN Solution">
+  <title>BSN Solution | Business Systems Network</title>
+  <meta name="description" content="BSN Solution: Microsoft Dynamics 365 Business Central, ERP systems, web and mobile applications. Dublin and Zagreb.">
+  <meta name="theme-color" content="#0a2342">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a2342'/%3E%3Cg stroke='%235b9bff' stroke-width='3'%3E%3Cline x1='20' y1='22' x2='44' y2='22'/%3E%3Cline x1='20' y1='22' x2='32' y2='44'/%3E%3Cline x1='44' y1='22' x2='32' y2='44'/%3E%3C/g%3E%3Ccircle cx='20' cy='22' r='7' fill='%23fff'/%3E%3Ccircle cx='44' cy='22' r='7' fill='%23fff'/%3E%3Ccircle cx='32' cy='44' r='7' fill='%235b9bff'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
   <style>
-    :root { --bg: #f6f7f9; --text: #1d2330; --muted: #5b6475; --accent: #1f6feb; }
+    :root { --navy: #0a2342; --navy-2: #12305a; --blue: #1d5fd1; --blue-light: #5b9bff; --soft: #c9d7ee; }
     * { box-sizing: border-box; }
-    body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text); }
-    main { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 24px; text-align: center; }
-    h1 { font-size: clamp(2rem, 6vw, 3.5rem); margin: 0 0 12px; }
-    p { color: var(--muted); font-size: 1.15rem; margin: 0 0 28px; }
-    a.button { background: var(--accent); color: #fff; text-decoration: none; padding: 12px 24px; border-radius: 8px; font-weight: 600; }
-    footer { position: fixed; bottom: 16px; width: 100%; text-align: center; color: var(--muted); font-size: .9rem; }
+    body {
+      margin: 0; min-height: 100vh; color: #fff;
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      background: radial-gradient(circle at 85% 15%, rgba(91,155,255,.25), transparent 45%), linear-gradient(135deg, var(--navy) 0%, var(--navy-2) 100%);
+      display: flex; flex-direction: column; overflow-x: hidden;
+    }
+    main { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 48px 20px; position: relative; z-index: 1; }
+    .logo { width: 104px; height: 104px; margin-bottom: 24px; }
+    .name { font-size: clamp(2.4rem, 7vw, 3.8rem); font-weight: 800; letter-spacing: -.02em; margin: 0; line-height: 1.1; }
+    .name span { font-weight: 500; color: var(--blue-light); }
+    .sub { margin: 10px 0 36px; font-size: .85rem; letter-spacing: .25em; text-transform: uppercase; color: var(--soft); }
+    .soon { display: inline-block; border: 1px solid rgba(255,255,255,.25); border-radius: 999px; padding: 8px 18px; font-size: .9rem; font-weight: 600; letter-spacing: .05em; color: var(--blue-light); margin-bottom: 22px; }
+    .lead { max-width: 620px; font-size: 1.15rem; line-height: 1.6; color: var(--soft); margin: 0 0 8px; }
+    .lead.hr { font-size: 1.02rem; color: #9fb3d4; margin-bottom: 34px; }
+    .btn { display: inline-block; background: var(--blue); color: #fff; text-decoration: none; padding: 14px 28px; border-radius: 10px; font-weight: 600; }
+    .btn:hover { background: #174fb0; }
+    .cities { margin-top: 28px; color: var(--soft); font-size: .95rem; }
+    .art { position: fixed; right: -80px; bottom: -80px; width: 480px; opacity: .14; pointer-events: none; }
+    footer { text-align: center; padding: 20px; font-size: .85rem; color: #8ea3c4; position: relative; z-index: 1; }
+    @media (max-width: 600px) { .art { width: 320px; } .sub { letter-spacing: .15em; } }
   </style>
 </head>
 <body>
   <main>
-    <h1>BSN Solution</h1>
-    <p>Our new website is coming soon.</p>
-    <a class="button" href="mailto:info@bsnsolution.com">Contact us</a>
+    <svg class="logo" viewBox="0 0 64 64" role="img" aria-label="BSN Solution logo">
+      <rect width="64" height="64" rx="14" fill="#0a2342" stroke="rgba(255,255,255,.2)"/>
+      <g stroke="#5b9bff" stroke-width="3"><line x1="20" y1="22" x2="44" y2="22"/><line x1="20" y1="22" x2="32" y2="44"/><line x1="44" y1="22" x2="32" y2="44"/></g>
+      <circle cx="20" cy="22" r="7" fill="#fff"/><circle cx="44" cy="22" r="7" fill="#fff"/><circle cx="32" cy="44" r="7" fill="#5b9bff"/>
+    </svg>
+    <h1 class="name">BSN <span>Solution</span></h1>
+    <p class="sub">Business Systems Network</p>
+    <span class="soon">Coming soon &middot; Uskoro</span>
+    <p class="lead">Microsoft Dynamics 365 Business Central, ERP systems, web and mobile applications. Our new website is on its way.</p>
+    <p class="lead hr">Microsoft Dynamics 365 Business Central, ERP sustavi, web i mobilne aplikacije. Naša nova web stranica uskoro je ovdje.</p>
+    <a class="btn" href="mailto:info@bsnsolution.com">info@bsnsolution.com</a>
+    <p class="cities">Dublin, Ireland &middot; Zagreb, Croatia</p>
   </main>
-  <footer>&copy; <span id="y"></span> BSN Solution</footer>
+  <footer>&copy; <span id="y">2026</span> BSN Solution</footer>
+  <svg class="art" viewBox="0 0 400 400" fill="none" aria-hidden="true"><g stroke="#5b9bff" stroke-width="2"><line x1="80" y1="90" x2="250" y2="70"/><line x1="80" y1="90" x2="160" y2="230"/><line x1="250" y1="70" x2="160" y2="230"/><line x1="250" y1="70" x2="340" y2="200"/><line x1="160" y1="230" x2="340" y2="200"/><line x1="160" y1="230" x2="230" y2="340"/><line x1="340" y1="200" x2="230" y2="340"/></g><g fill="#fff"><circle cx="80" cy="90" r="14"/><circle cx="250" cy="70" r="18"/><circle cx="340" cy="200" r="14"/><circle cx="230" cy="340" r="12"/></g><circle cx="160" cy="230" r="22" fill="#5b9bff"/></svg>
   <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
